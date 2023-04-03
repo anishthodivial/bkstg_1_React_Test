@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "bkstg_1_React_Test"
+  description: "React test app using backstage"
+  annotations:
+    argocd/app-name: ARGOCDAPP
+    sonarqube.org/project-key: SONARPROJ
+    jenkins.io/job-full-name: JENKINSJOB
+    #github.com/project-slug: anishthodivial/bkstg_1_React_Test
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "bkstg_1_React_Test"
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/test"
